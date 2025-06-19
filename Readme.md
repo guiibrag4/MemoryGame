@@ -1,4 +1,6 @@
-<table>Add commentMore actions
+# Olá, esse projeto é um jogo da memória em C com aplicações de parâmetros nas funções e estrutura de dados
+
+<table>
   <tr>
     <td align="center">
       <img src="https://github.com/guiibrag4/JogoDaMemoria_C/assets/131495236/8bf7a203-eee7-4ca4-b4b9-9899de91490e" width="430px" height="280px" alt="Imagem 1" width="200"/>
@@ -16,4 +18,4 @@
     </td>
   </tr>
 </table>
-Add comment
+
