@@ -11,13 +11,14 @@ void Menu_Jogo();
 void Desenho_Menu();
 void Instrucoes();
 void Escolha_Dificuldade();
-void Asterisco_Revelacoes();
+void Asterisco_Revelacoes(int *teste1, int *teste2);
 void Cartas_Facil();
 void Cartas_Medio();
 void Cartas_Dificil();
 void Embaralhar();
 void Imprime_Cartas_Facil();
 void Jogar();
+
 
 /* Struct que contém uma variável que será utilizada para conferir se um par de cartas foi virado e deixar esse par impresso na tela */
 typedef struct sJogo_memoria {
@@ -152,8 +153,17 @@ void Asterisco_Revelacoes(int *teste1, int *teste2) {
 }
 
 void Escolha_Dificuldade() {
-  char nivel;
-  int Design = 16;
-  do {
-    puts("Escolha o nível de dificuldade do jogo: \n\n(F) Fácil \n(M) Média \n(D) Difícil ");
-    scanf(" %c", &
+    char nivel;
+    int Design = 16;
+    do {
+        puts("Escolha o nível de dificuldade do jogo: \n\n(F) Fácil \n(M) Média \n(D) Difícil ");
+        scanf(" %c", &nivel);
+        // ...restante da lógica...
+    } while (nivel != 'F' && nivel != 'M' && nivel != 'D');
+}
+
+int main() {
+    setlocale(LC_ALL, "");
+    Menu_Jogo();
+    return 0;
+}
